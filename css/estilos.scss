@@ -285,13 +285,3 @@ $colorBotones:(primary:#0077b6, secondary:#495057);
     }
     
 }
-/* cambio los colores de cada uno de los items */
-$idColores:(a:#ff0000,b:#ff0078,c:#ff00e4,d:#9600ff,e:#5a00ff,f:#1e00ff,g:#0084ff,h:#00e4ff,i:#00ffa2
-,j:#00ff60,k:#24ff00,l:#baff00,m:#eaff00,n:#ffd800,o:#ff7e00,p:#ff3600);
-ol {
-    @each $id,$color in $idColores {
-        li##{$id}{
-            color: $color;
-        }
-    }
-}
