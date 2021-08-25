@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Pagina de ayuda, sugerencias y/o quejas acerca del sitio">
+        <meta name="keywords" content="AYUDA HELP INFORMACION MAIL COMENTARIO COMMENTS">
+        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/estilos.css">
+        <title>Recomendaciones de Yufie - Ayuda</title>
+    </head>
+    <body>
+        <div id="fondo">
+            <header><img src="../media/banner.jpg" alt="el Banner"></header>
+            <h1 id="titulos">¿En que podemos Ayudarte?</h1>
+            <!-- parte del menu -->
+            <nav class="sticky-top">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/Juegos.html">Juegos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/mangas.html">Mangas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../pages/anime.html">Anime</a></li>
+                </ul>
+            </nav>
+            <!-- parte del formulario de ayuda -->
+            <form>
+                <div class="mb-3">
+                    <input id="email" class="form-control" type="email" placeholder="Ingrese su email">
+                    <div id="emailHelp" class="form-text">No compartiremos su direccion de email con nadie.</div>
+                </div>
+                <div class="mb-3 form-check">
+                    <input id="check" class="form-check-input" type="checkbox">
+                    <label for="check" class="form-check-label">¿Desea recibir noticias a su mail?</label>
+                </div>
+                <div class="mb-3">
+                    <select class="form-select">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Deje su comentario aquí" id="comentario"></textarea>
+                    <label for="comentario">Comentario</label>
+                </div>
+                <button type="reset" class="btn btn-secondary">Reiniciar</button>
+                <button id="enviar" type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            <!-- parte del pie de pagina -->
+            <footer class="footer">
+                <p>Una pagina mas de recomendaciones <br> Creado por Yufie Asdragath en 2021. Todos los derechos reservados.</p>
+                <a href="../pages/terycon.html">Terminos y condiciones</a>
+                <a href="../pages/polpriv.html">Politicas de Privacidad</a>
+                <a href="../pages/nosotros.html">Sobre Nosotros</a>
+            </footer>
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,363 @@
+@charset "UTF-8";
+header img {
+  width: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+#titulos {
+  color: whitesmoke;
+  font-size: 50px;
+  text-align: center;
+  font-style: italic;
+}
+
+#subtitulo {
+  margin-top: 5px;
+  color: #ccc9c9;
+  font-size: 1rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+@media (min-width: 425px) {
+  #subtitulo {
+    font-size: 1.5rem;
+  }
+}
+
+#fondo {
+  background: url("../media/fondo.png");
+  background-attachment: fixed;
+}
+
+#fondo h2 {
+  color: #ccc9c9;
+}
+
+#fondo h3 {
+  color: #ccc9c9;
+}
+
+#fondo h4 {
+  color: #ccc9c9;
+}
+
+#fondo ol {
+  color: #ccc9c9;
+}
+
+/* formato footer para todos */
+.footer {
+  background-color: grey;
+  padding: 10px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'minecraft-font';
+  src: url(../fonts/minecraft.ttf);
+}
+
+@font-face {
+  font-family: 'pixel-font';
+  src: url(../fonts/dogicapixel.ttf);
+}
+
+div h2, div h3 {
+  font-family: minecraft-font;
+}
+
+li h2 {
+  font-family: sans-serif;
+}
+
+/* estructura modificada de bootstrap para el menu */
+nav {
+  /* le doy un fondo asi como un pequeño padding al nav para que quede mejor ahora q es sticky */
+  background-color: #03045e;
+  padding: 5px;
+}
+
+nav .nav-pills {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+nav .nav-pills .nav-link.active, nav .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #03045e;
+}
+
+nav .nav-pills .nav-link {
+  font-family: minecraft-font;
+  font-size: 0.7rem;
+  color: white;
+}
+
+nav .nav-pills .nav-link:hover {
+  color: #caf0f8;
+}
+
+@media (min-width: 321px) {
+  .nav-pills .nav-link {
+    font-size: 1rem !important;
+    /* lo mismo que abajo... desconozco el porque */
+  }
+}
+
+/* tuve q poner el !important xq en bootstrap lo tenia y sino no lo podia sobreescribir */
+.bg-dark {
+  background-color: #03045e !important;
+}
+
+/* separe esta clase q pertenece a nav-pills porque me generaba problemas con las animaciones */
+.nav-item {
+  background-color: #023e8a;
+  color: white;
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+  border-radius: 8%;
+  width: 75px;
+}
+
+.nav-item:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+@media (min-width: 321px) {
+  .nav-item {
+    width: 90px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+
+/* modificando la clase grid de Bootstrap para que las imagenes en el mismo
+tengan una animacion y que la seccion tenga un fondo para diferenciarla mejor*/
+.container img {
+  margin-bottom: 10px;
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+  width: 260px;
+}
+
+.container img:hover {
+  -webkit-transform: scale(1.07, 1.07);
+          transform: scale(1.07, 1.07);
+}
+
+.container div {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+}
+
+.container h3 {
+  text-align: center;
+}
+
+@media (min-width: 360px) {
+  .container img {
+    width: 320px;
+  }
+}
+
+@media (min-width: 420px) {
+  .container img {
+    width: 370px;
+  }
+}
+
+@media (min-width: 520px) {
+  .container img {
+    width: 330px;
+  }
+}
+
+@media (min-width: 769px) {
+  .container img {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container h3 {
+    font-size: 2.5rem;
+  }
+}
+
+/* moviendo el video a la derecha y haciendo q el texto tenga fondo para una mejor lectura */
+.textoYVideo iframe, .textoImagen iframe {
+  float: right;
+  margin: 5px;
+  width: 480px;
+  height: 360px;
+}
+
+.textoYVideo p, .textoImagen p {
+  background: rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  font-weight: 600;
+}
+
+.textoImagen img {
+  float: right;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  width: 300px;
+}
+
+@media (min-width: 426px) {
+  .textoYVideo iframe, .textoImagen iframe {
+    width: 858px;
+    height: 480px;
+  }
+}
+
+.textoTachado {
+  text-decoration: line-through;
+}
+
+/* ajustando la imagen del carrusel para que sea responsivo */
+.carousel-inner img {
+  width: 100%;
+  height: 135px;
+}
+
+/* creo que aca logre que la imagen del carrusel ya no cambie la altura de manera tan fea y aplicaria lo del desafio */
+@media (min-width: 375px) {
+  .carousel-inner img {
+    height: 162px;
+  }
+}
+
+@media (min-width: 700px) {
+  .carousel-inner img {
+    height: 270px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .carousel-inner img {
+    height: 359.991px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .carousel-inner img {
+    height: 506.25px;
+  }
+}
+
+/* cambiando el texto del label para que sea mas visible */
+.form-check {
+  font-weight: bolder;
+  color: whitesmoke;
+}
+
+/* modificando los botones para que sigan la paleta de colores de la pagina */
+.btn-primary {
+  background-color: #0077b6;
+  border-color: #0077b6;
+}
+
+.btn-secondary {
+  background-color: #495057;
+  border-color: #495057;
+}
+
+.btn-primary:hover {
+  background-color: #00b4d8;
+  border-color: #00b4d8;
+}
+
+.btn-secondary:hover {
+  background-color: #6c757d;
+  border-color: #6c757d;
+}
+
+/* cambio los colores de cada uno de los items */
+ol li#a {
+  color: #ff0000;
+}
+
+ol li#b {
+  color: #ff0078;
+}
+
+ol li#c {
+  color: #ff00e4;
+}
+
+ol li#d {
+  color: #9600ff;
+}
+
+ol li#e {
+  color: #5a00ff;
+}
+
+ol li#f {
+  color: #1e00ff;
+}
+
+ol li#g {
+  color: #0084ff;
+}
+
+ol li#h {
+  color: #00e4ff;
+}
+
+ol li#i {
+  color: #00ffa2;
+}
+
+ol li#j {
+  color: #00ff60;
+}
+
+ol li#k {
+  color: #24ff00;
+}
+
+ol li#l {
+  color: #baff00;
+}
+
+ol li#m {
+  color: #eaff00;
+}
+
+ol li#n {
+  color: #ffd800;
+}
+
+ol li#o {
+  color: #ff7e00;
+}
+
+ol li#p {
+  color: #ff3600;
+}
+/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Recomendaciones de Yufie - ¡Tu sitio de recomendaciones favorito!</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Es una pagina de recomendaciones varias tanto de juegos, anime y manga.">
+        <meta name="keywords" content="ANIME MANGA JUEGOS GAMES BERSERK KIZUMONOGATARI HAIKYUU SAILOR MOON SHADOW COLOSSUS ELDEN RING RECOMENDACIONES">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/estilos.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div id="fondo">
+            <!-- cambie el banner a uno con los colores de la pagina -->
+            <header><img src="./media/banner.jpg" alt="el Banner">
+            </header>
+            <!-- parte del menu -->
+            <nav class="sticky-top">
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/Juegos.html">Juegos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/mangas.html">Mangas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./pages/anime.html">Anime</a></li>
+                </ul>
+            </nav>
+            
+            <!-- parte del carrusel -->
+            <section>
+                <div id="carrusel" class="carousel slide" data-ride="carousel">
+                    <!-- muestra de imagenes -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="./pages/Juegos.html"><img src="./media/carrNier.jpg" alt="Nier:Automata"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="./pages/anime.html"><img src="./media/carrJujutsu.jpeg" alt="Jujutsu Kaisen"></a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="./pages/anime.html"><img src="./media/carrLastBoss.jpg" alt="Yasei no last boss ga arawareta!"></a>
+                        </div>
+                    </div>
+                    <!-- controles -->
+                    <a class="carousel-control-prev" href="#carrusel" data-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#carrusel" data-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </a>
+                </div>
+            </section>
+            <!-- seccion principal de la pagina -->
+            <section>
+                <h2 id="subtitulo">¡Las mejores recomendaciones!</h2>
+                <article class="container">
+                    <div class="row">
+                        <div class="col">
+                            <a href="./pages/berserk.html"><img src="./media/berserk.jpg" alt="berserk"></a>
+                            <h3>Berserk</h3>
+                            <p>Berserk es un manga creado por Kentaro Miura y posteriormente adaptado en anime, con un estilo épico fantástico y de fantasía oscura.</p></div>
+                        <div class="col">
+                            <a href="./pages/eldenRing.html"><img src="./media/elden.jpg" alt="Elden Ring"></a>
+                            <h3>Elden Ring</h3>
+                            <p>Elden Ring es un próximo videojuego de rol de acción desarrollado por FromSoftware y publicado por Bandai Namco Entertainment. El juego es una colaboración entre el director del juego Hidetaka Miyazaki y el novelista de fantasía George R. R. Martin.</p></div>
+                        <div class="col">
+                            <a href="./pages/kizumonogatari.html"><img src="./media/kizu.jpg" alt="Kizumonogatari"></a>
+                            <h3>Kizumonogatari</h3>
+                            <p>Kizumonogatari es una película de animación japonesa de horror. ​Está basada en la novela ligera Kizumonogatari, precuela de Bakemonogatari y parte de la franquicia Monogatari, una serie de novelas escritas por Nishio Ishin.</p></div>
+                        <div class="col">
+                            <a href="./pages/shadowOfTheColossus.html"><img src="./media/shadow.png" alt="Shadow of the Colosous"></a>
+                            <h3>Shadow of the Colosous</h3>
+                            <p>Shadow of the Colossus es un videojuego de acción-aventura para PlayStation 2 y posteriormente lanzado un remake para PlayStation 4.</p></div>
+                        <div class="col">
+                            <a href="./pages/haikyu.html"><img src="./media/haikyuu.jpg" alt="Haikyuu!"></a>
+                            <h3>Haikyu!!</h3>
+                            <p>Haikyū!! es una historia de manga escrita e ilustrada por Haruichi Furudate. La historia empieza cuando Shōyō Hinata, aún siendo un estudiante de primaria, ve un partido de voleibol por la televisión, en el cual ve jugar al conocido "Pequeño Gigante". Desde entonces, desea convertirse en alguien como él, debido a que ambos son bajos de estatura, y comienza a aficionarse por el deporte.
+                            </p>
+                        </div>
+                        <div class="col">
+                            <a href="./pages/sailorMoon.html"><img src="./media/sailor-moon.png" alt="Sailor Moon"></a>
+                            <h3>Sailor Moon</h3>
+                            <p>Pretty Soldier Sailor Moon, mejor conocida como Sailor Moon, es una serie de manga escrita e ilustrada por Naoko Takeuchi en 1991. Usagi Tsukino es una adolescente cuya vida cambia para siempre cuando ayuda y se encuentra una gata negra con una marca de Luna en la frente, de nombre "Luna", quien le revela que está destinada a convertirse en una Sailor Senshi con poderes mágicos que debe enfrentarse a las fuerzas del mal.
+                            </p>
+                        </div>
+                        
+                    </div>
+                </article>
+            </section>
+            <!-- parte del link a ayuda -->
+            <aside>
+                <a title="Ayuda" href="./pages/ayuda.html"><img src="./media/ayuda.png" alt="Ayuda" width="30rem"></a>
+            </aside>
+            <!-- parte del pie de pagina -->
+            <footer class="footer">
+                <p>Una pagina mas de recomendaciones <br> Creado por Yufie Asdragath en 2021. Todos los derechos reservados.</p>
+                <a href="./pages/terycon.html">Terminos y condiciones</a>
+                <a href="./pages/polpriv.html">Politicas de Privacidad</a>
+                <a href="./pages/nosotros.html">Sobre Nosotros</a>
+            </footer>
+        </div>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
