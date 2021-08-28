@@ -139,7 +139,7 @@ nav .nav-pills .nav-link:hover {
           transform: scale(1.02);
 }
 
-@media (min-width: 321px) {
+@media (min-width: 351px) {
   .nav-item {
     width: 90px;
   }
