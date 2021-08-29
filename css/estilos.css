@@ -76,9 +76,6 @@ h1 {
 
 div h2, div h3 {
   font-family: minecraft-font;
-}
-
-div h2 {
   margin-left: 10px;
 }
 
@@ -214,8 +211,8 @@ tengan una animacion y que la seccion tenga un fondo para diferenciarla mejor*/
 .textoYVideo iframe, .textoImagen iframe {
   float: right;
   margin: 5px;
-  width: 480px;
-  height: 360px;
+  width: 256px;
+  height: 144px;
 }
 
 .textoYVideo p, .textoImagen p {
@@ -228,13 +225,34 @@ tengan una animacion y que la seccion tenga un fondo para diferenciarla mejor*/
   float: right;
   margin-left: 5px;
   margin-bottom: 5px;
-  width: 300px;
+  width: 200px;
 }
 
-@media (min-width: 426px) {
+/* ajuste del iframe y que quede mas armonioso y responsivo a los diferentes dispositivos */
+@media (min-width: 500px) {
   .textoYVideo iframe, .textoImagen iframe {
-    width: 858px;
-    height: 480px;
+    width: 426px;
+    height: 240px;
+  }
+}
+
+@media (min-width: 768px) {
+  .textoYVideo iframe, .textoImagen iframe {
+    width: 640px;
+    height: 360px;
+  }
+}
+
+/* ajuste de imagenes en la secciones particulares para que las imagenes queden acorde al tamaño de la pantalla */
+@media (min-width: 426px) {
+  .textoImagen img {
+    width: 300px;
+  }
+}
+
+@media (min-width: 769px) {
+  .textoImagen img {
+    width: 400px;
   }
 }
 
