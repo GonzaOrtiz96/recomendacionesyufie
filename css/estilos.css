@@ -17,14 +17,14 @@ h1 {
 #subtitulo {
   margin-top: 5px;
   color: #ccc9c9;
-  font-size: 1rem;
+  font-size: 1.75rem;
   text-align: center;
   text-decoration: underline;
 }
 
 @media (min-width: 425px) {
   #subtitulo {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -74,7 +74,7 @@ h1 {
   src: url(../fonts/dogicapixel.ttf);
 }
 
-div h2, div h3 {
+div h1, div h2 {
   font-family: minecraft-font;
   margin-left: 10px;
 }
@@ -160,6 +160,9 @@ tengan una animacion y que la seccion tenga un fondo para diferenciarla mejor*/
   transition: -webkit-transform 300ms;
   transition: transform 300ms;
   transition: transform 300ms, -webkit-transform 300ms;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   width: 260px;
 }
 
@@ -173,8 +176,13 @@ tengan una animacion y que la seccion tenga un fondo para diferenciarla mejor*/
   padding: 10px;
 }
 
-.container h3 {
+.container h2, .container h3 {
   text-align: center;
+}
+
+.container h2 {
+  color: #060a93 !important;
+  /* uso este important para romper el orden de presendencia puesto en #fondo h2 */
 }
 
 @media (min-width: 360px) {
