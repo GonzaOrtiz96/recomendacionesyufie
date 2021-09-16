@@ -35,7 +35,9 @@ $cosasfondo:(h2, h3, h4, ol);
         }
     }
 }
-
+ul{
+    list-style: none;
+}
 /* formato footer para todos */
 .footer{
     background-color: grey;
@@ -189,6 +191,46 @@ tengan una animacion y que la seccion tenga un fondo para diferenciarla mejor*/
         }
     }
 }
+/* parte especifica para el orden de las imagenes en la seccion de elden ring*/
+$imagenes:(primera:left,segunda:right,tercera:left);
+
+@each $id, $posicion in $imagenes{
+    .textoYVideo{
+        li{
+            img##{$id}{
+                float: $posicion;
+                margin: 5px;
+                @media (min-width: 424px){
+                    width: 270px;
+                }
+                @media (min-width: 700px){
+                    width: 400px;
+                }
+                @media (min-width: 1000px){
+                    width: 450px;
+                }
+            }
+        }
+    }
+}
+$imgParalelas:(cuarta,quinta,sexta);
+@each $id in $imgParalelas {
+    .textoYVideo{
+        img##{$id}{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5px;
+            width: 280px;
+            @media (min-width: 424px){
+                width: 380px;
+            }
+            @media (min-width:700px){
+                width: 500px;
+            }
+        }
+    }
+}
 /* moviendo el video a la derecha y haciendo q el texto tenga fondo para una mejor lectura */
 .textoYVideo{
     iframe{
@@ -197,13 +239,32 @@ tengan una animacion y que la seccion tenga un fondo para diferenciarla mejor*/
         width: 256px;
         height: 144px;
     }
-    p{
+    ul, p{
         background: rgba(255, 255, 255, 0.3);
         padding: 10px;
         font-weight: 600;
     }
+    li{
+        img{
+            width: 200px;
+        }
+    }
 }
 
+@media (min-width: 424px){
+    li{
+        img{
+            width: 300px
+        }
+    }
+}
+@media (min-width: 700px){
+    li{
+        img{
+            width: 400px
+        }
+    }
+}
 .textoImagen{
     @extend .textoYVideo;
     img{
@@ -211,6 +272,52 @@ tengan una animacion y que la seccion tenga un fondo para diferenciarla mejor*/
         margin-left: 5px;
         margin-bottom: 5px;
         width: 200px;
+    }
+    li{
+        img{
+            margin: 5px;
+            width: 150px;
+            float: left;
+        }
+        img#colosos{
+            float: none;
+            width: 95%;
+        }
+    }
+}
+
+/* parte especifica para las imagenes de la seccion haikyu */
+
+$haikyu:(hinata:left,kageyama:right,daichi:left,koushi:right,asahi:left,tanaka:right,nishinoya:left,kinoshita:right,tsukki:left,yama:right);
+
+@each $id, $posicion in $haikyu{
+    .textoImagen{
+        img##{$id}{
+            float: $posicion;
+        }
+    }
+}
+
+/* parte especifica para las imagenes de la seccion sailor moon */
+
+//$sailor:(usagi:left, ami:right, rei:left, makoto:right, minako:left, mamoru:right, chibi:left, setsuna:right, haruka:left,michiru:right,hotaru:left);
+$sailor:(usagi,ami,rei,makoto,minako,mamoru,chibi,setsuna,haruka,michiru,hotaru);
+@each $id in $sailor{
+    .textoImagen{
+        img##{$id}{
+            float: none;
+        }
+    }
+}
+
+
+@media (min-width: 1023px){
+    .textoImagen{
+        li{
+            img{
+                width: 180px;
+            }
+        }
     }
 }
 

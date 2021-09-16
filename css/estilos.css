@@ -49,6 +49,10 @@ h1 {
   color: #ccc9c9;
 }
 
+ul {
+  list-style: none;
+}
+
 /* formato footer para todos */
 .footer {
   background-color: grey;
@@ -215,6 +219,136 @@ tengan una animacion y que la seccion tenga un fondo para diferenciarla mejor*/
   }
 }
 
+/* parte especifica para el orden de las imagenes en la seccion de elden ring*/
+.textoYVideo li img#primera, .textoImagen li img#primera {
+  float: left;
+  margin: 5px;
+}
+
+@media (min-width: 424px) {
+  .textoYVideo li img#primera, .textoImagen li img#primera {
+    width: 270px;
+  }
+}
+
+@media (min-width: 700px) {
+  .textoYVideo li img#primera, .textoImagen li img#primera {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .textoYVideo li img#primera, .textoImagen li img#primera {
+    width: 450px;
+  }
+}
+
+.textoYVideo li img#segunda, .textoImagen li img#segunda {
+  float: right;
+  margin: 5px;
+}
+
+@media (min-width: 424px) {
+  .textoYVideo li img#segunda, .textoImagen li img#segunda {
+    width: 270px;
+  }
+}
+
+@media (min-width: 700px) {
+  .textoYVideo li img#segunda, .textoImagen li img#segunda {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .textoYVideo li img#segunda, .textoImagen li img#segunda {
+    width: 450px;
+  }
+}
+
+.textoYVideo li img#tercera, .textoImagen li img#tercera {
+  float: left;
+  margin: 5px;
+}
+
+@media (min-width: 424px) {
+  .textoYVideo li img#tercera, .textoImagen li img#tercera {
+    width: 270px;
+  }
+}
+
+@media (min-width: 700px) {
+  .textoYVideo li img#tercera, .textoImagen li img#tercera {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .textoYVideo li img#tercera, .textoImagen li img#tercera {
+    width: 450px;
+  }
+}
+
+.textoYVideo img#cuarta, .textoImagen img#cuarta {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  width: 280px;
+}
+
+@media (min-width: 424px) {
+  .textoYVideo img#cuarta, .textoImagen img#cuarta {
+    width: 380px;
+  }
+}
+
+@media (min-width: 700px) {
+  .textoYVideo img#cuarta, .textoImagen img#cuarta {
+    width: 500px;
+  }
+}
+
+.textoYVideo img#quinta, .textoImagen img#quinta {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  width: 280px;
+}
+
+@media (min-width: 424px) {
+  .textoYVideo img#quinta, .textoImagen img#quinta {
+    width: 380px;
+  }
+}
+
+@media (min-width: 700px) {
+  .textoYVideo img#quinta, .textoImagen img#quinta {
+    width: 500px;
+  }
+}
+
+.textoYVideo img#sexta, .textoImagen img#sexta {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  width: 280px;
+}
+
+@media (min-width: 424px) {
+  .textoYVideo img#sexta, .textoImagen img#sexta {
+    width: 380px;
+  }
+}
+
+@media (min-width: 700px) {
+  .textoYVideo img#sexta, .textoImagen img#sexta {
+    width: 500px;
+  }
+}
+
 /* moviendo el video a la derecha y haciendo q el texto tenga fondo para una mejor lectura */
 .textoYVideo iframe, .textoImagen iframe {
   float: right;
@@ -223,10 +357,26 @@ tengan una animacion y que la seccion tenga un fondo para diferenciarla mejor*/
   height: 144px;
 }
 
-.textoYVideo p, .textoImagen p {
+.textoYVideo ul, .textoImagen ul, .textoYVideo p, .textoImagen p {
   background: rgba(255, 255, 255, 0.3);
   padding: 10px;
   font-weight: 600;
+}
+
+.textoYVideo li img, .textoImagen li img {
+  width: 200px;
+}
+
+@media (min-width: 424px) {
+  li img {
+    width: 300px;
+  }
+}
+
+@media (min-width: 700px) {
+  li img {
+    width: 400px;
+  }
 }
 
 .textoImagen img {
@@ -234,6 +384,109 @@ tengan una animacion y que la seccion tenga un fondo para diferenciarla mejor*/
   margin-left: 5px;
   margin-bottom: 5px;
   width: 200px;
+}
+
+.textoImagen li img {
+  margin: 5px;
+  width: 150px;
+  float: left;
+}
+
+.textoImagen li img#colosos {
+  float: none;
+  width: 95%;
+}
+
+/* parte especifica para las imagenes de la seccion haikyu */
+.textoImagen img#hinata {
+  float: left;
+}
+
+.textoImagen img#kageyama {
+  float: right;
+}
+
+.textoImagen img#daichi {
+  float: left;
+}
+
+.textoImagen img#koushi {
+  float: right;
+}
+
+.textoImagen img#asahi {
+  float: left;
+}
+
+.textoImagen img#tanaka {
+  float: right;
+}
+
+.textoImagen img#nishinoya {
+  float: left;
+}
+
+.textoImagen img#kinoshita {
+  float: right;
+}
+
+.textoImagen img#tsukki {
+  float: left;
+}
+
+.textoImagen img#yama {
+  float: right;
+}
+
+/* parte especifica para las imagenes de la seccion sailor moon */
+.textoImagen img#usagi {
+  float: none;
+}
+
+.textoImagen img#ami {
+  float: none;
+}
+
+.textoImagen img#rei {
+  float: none;
+}
+
+.textoImagen img#makoto {
+  float: none;
+}
+
+.textoImagen img#minako {
+  float: none;
+}
+
+.textoImagen img#mamoru {
+  float: none;
+}
+
+.textoImagen img#chibi {
+  float: none;
+}
+
+.textoImagen img#setsuna {
+  float: none;
+}
+
+.textoImagen img#haruka {
+  float: none;
+}
+
+.textoImagen img#michiru {
+  float: none;
+}
+
+.textoImagen img#hotaru {
+  float: none;
+}
+
+@media (min-width: 1023px) {
+  .textoImagen li img {
+    width: 180px;
+  }
 }
 
 /* ajuste del iframe y que quede mas armonioso y responsivo a los diferentes dispositivos */
